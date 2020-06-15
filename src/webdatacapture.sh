@@ -77,6 +77,7 @@ mfc_remove()
 mfc_removetags()
 {
 	mfc_getwebdata_success=0
+	mfc_removetags_success=0
 
 	local searchStr1=""
 	local searchStr2=""
@@ -272,6 +273,7 @@ mfc_removetags()
 # Parameter N2 - End Tags as an Array
 mfc_getwebdata()
 {
+	mfc_getwebdata_success=0
 	mfc_removetags_success=0
 
 	local flag=0
