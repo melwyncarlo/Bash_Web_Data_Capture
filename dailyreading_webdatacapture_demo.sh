@@ -141,12 +141,12 @@ if [ $mfc_getwebdata_success -eq 1 ]; then
 	else
 		echo
 		echo
-		echo "ERROR ACCESSING DATA"
+		echo "ERROR MANIPULATING DATA"
 	fi
 else
 	echo
 	echo
-	echo "ERROR MANIPULATING DATA"
+	echo "ERROR ACCESSING DATA"
 fi
 
 
