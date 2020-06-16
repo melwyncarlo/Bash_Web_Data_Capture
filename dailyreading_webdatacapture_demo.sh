@@ -28,7 +28,7 @@ count=0
 
 
 # Parameter 1 - Filepath
-# Parameter 2 - Return String
+# Parameter 2 - Return String	[ REFERENCE ]
 function_readfile()
 {
 	local filepath=$1
