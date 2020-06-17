@@ -28,11 +28,12 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 <ins>NOTE :</ins>
 - _The main source file is located in the 'src' directory._
 - _The argument denotes that downloaded data will be stored in the 'data' directory._
-- _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_ <br>
+- _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_
+<br>
 
 `url="SOME_WEBSITE_ADDRESS"` <br>
 `sorted_contents_directory="$webdata_directory"` <br>
-`sorted_contents_filename="stuff"` <br><br>
+`sorted_contents_filename="stuff"` <br>
 
 `startClues=("Tag1" "Tag2" "Tag3")` <br>
 `endClues=("Tag1" "Tag2" "Tag3")` <br><br>
