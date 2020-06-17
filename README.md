@@ -47,7 +47,8 @@ _NOTE :_
 
 <pre>
 mfc_getwebdata        -->   Parameter 1 - URL
-                            Parameter 2 - Cached Duration ( 1 => New; 2 => Old; 3 => Day-old; ?* => Specified Duration )
+                            Parameter 2 - Cached Duration
+                            ( 1 => New; 2 => Old; 3 => Day-old; ?* => Specified Duration )
                             [ h =>  Hours; d => Days; w => Weeks; m => Months ]
                             Parameter 3 - Quiet Mode
                             Parameter 4 - Independent Mode
@@ -70,7 +71,31 @@ mfc_removetags        -->   Parameter 1 - Save File Directory ( Absolute Path )
 <br><br>
 ### The source library also contains 2 SUPPLEMENTARY functions. Given below are function calls and descriptive lists of arguments :
 
+**2.  Function Calls**
 
+`mfc_only "70" "8" "130" "0" "1" "5" "1" "" "${sampletext[@]}"` <br>
+`echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
+
+`mfc_remove "80" "8" "0" "1" "1" "5" "1" "1" "1" "0" "" "${sampletext[@]}"` <br>
+`echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
+
+<ins>NOTE :</ins>
+- _The '-e' is not required for Simple (Character-based) Heading Banners_
+- _Assigning too small values for design lengths or large values for border thickness will lead to a run-time error that results in loss of text_
+- _Use individual '\n' to denote a line break as shown in 'sampletext'_
+
+
+**3.  List of Arguments**
+
+<pre>
+mfc_only        -->   Parameter 1 - Data
+                      Parameter 2 - Mode ( 1 => Alpha; 2 => Num; 3 => AlphaNum )
+                      Parameter 3 - Return Data	[ REFERENCE ]
+
+mfc_remove      -->   Parameter 1 - Data
+                      Parameter 2 - Mode ( 1 => Alpha; 2 => Num; 3 => AlphaNum; ?* => Specific Characters)
+                      Parameter 3 - Return Data	[ REFERENCE ]
+</pre>
 
                               
 ### For any other queries :
