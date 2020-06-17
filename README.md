@@ -148,10 +148,10 @@ ERROR 07    =>  This error has occurred because no web data have been gathered y
 <br><br>
 ### The source library also contains 2 SUPPLEMENTARY functions. <br>Given below are function calls and descriptive lists of arguments :
 
-
+<br>
 `text="123.Some Text!"` <br>
 `modified_text=""`
-
+<br>
 
 **1.  Function Calls**
 
