@@ -17,7 +17,7 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 </pre>
 
 <br><br>
-### The source library contains 2 MAIN functions. Given below are function calls and descriptive lists of arguments :
+### The source library contains 2 MAIN functions. <br>Given below are function calls and descriptive lists of arguments :
 
 **1.  Including the Main Source File in Demo Script Files**
 
