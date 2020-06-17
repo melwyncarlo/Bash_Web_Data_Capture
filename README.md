@@ -29,6 +29,7 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 - _The main source file is located in the 'src' directory._
 - _The argument denotes that downloaded data will be stored in the 'data' directory._
 - _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_
+- _If the variable `webdata_directory=""`, then the application directory will be used._
 <br>
 
 `url="SOME_WEBSITE_ADDRESS"` <br>
@@ -147,18 +148,42 @@ ERROR 07    =>  This error has occurred because no web data have been gathered y
 <br><br>
 ### The source library also contains 2 SUPPLEMENTARY functions. <br>Given below are function calls and descriptive lists of arguments :
 
+`text="123.Some Text!"`
+`modified_text=""`
+
 **1.  Function Calls**
 
-`mfc_only "70" "8" "130" "0" "1" "5" "1" "" "${sampletext[@]}"` <br>
-`echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
 
-`mfc_remove "80" "8" "0" "1" "1" "5" "1" "1" "1" "0" "" "${sampletext[@]}"` <br>
-`echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
+`mfc_only "$text" "1" modified_text` <br>
+`mfc_only "$text" "2" modified_text` <br>
+`mfc_only "$text" "3" modified_text` <br>
+
+The above results are:
+<pre>
+  =>  SomeText
+  =>  123
+  =>  123SomeText
+</pre>
+<br>
+
+`mfc_remove "$text" "1" modified_text` <br>
+`mfc_remove "$text" "2" modified_text` <br>
+`mfc_remove "$text" "3" modified_text` <br>
+`mfc_remove "$text" "?!" modified_text` <br>
+`mfc_remove "$text" "?.Some Text" modified_text` <br>
+
+The above results are:
+<pre>
+  =>  123. !
+  =>  .Some Text!
+  =>  . !
+  =>  123.Some Text
+  =>  123!
+</pre>
+<br>
 
 <ins>NOTE :</ins>
-- _The '-e' is not required for Simple (Character-based) Heading Banners_
-- _Assigning too small values for design lengths or large values for border thickness will lead to a run-time error that results in loss of text_
-- _Use individual '\n' to denote a line break as shown in 'sampletext'_
+- _The results are stored in the variable `$modified_text`_
 <br>
 
 **2.  List of Arguments**
