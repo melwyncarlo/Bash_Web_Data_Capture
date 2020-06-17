@@ -21,18 +21,41 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 
 **1.  Including the Main Source File in Demo Script Files**
 
-`source src/webdatacapture.sh "data/"`
+`webdata_directory="data"`
+
+`source src/webdatacapture.sh "$webdata_directory/"`
 
 _NOTE :_
 - _The main source file is located in the 'src' directory._
 - _The argument denotes that downloaded data will be stored in the 'data' directory._
 - _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_
 
+`url="SOME_WEBSITE_ADDRESS"`
+`sorted_contents_directory="$webdata_directory"`
+`sorted_contents_filename="stuff"`
+
+`startClues=("Tag1" "Tag2" "Tag3")`
+`endClues=("Tag1" "Tag2" "Tag3")`
+
+_NOTE :_
+- _Start Tags may be of the form ' ... Some Text ... <TAG> ... Some Text ... '._
+- _End Tags may be of the form ' ... Some Text ... </TAG> ... Some Text ... '._
+- _'Some Text' may not exist in some cases._
+- _'TAG' is meant to be replaced with actual HTML tag names._
+- _In some cases, simply text may be used instead of tags._
+- _All this depends on the required contents and their placement in the webpage soruce file_
+
 
 **2.  Function Calls**
 
-`mfc_getwebdata "70" "8" "130" "0" "1" "5" "1" "" "${sampletext[@]}"` <br>
-`echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
+`mfc_getwebdata "$url" "1" "0" "1" "1" "0" "0" "$sorted_contents_directory" \ `<br>
+`"$sorted_contents_filename" "${startClues[@]}" "${endClues[@]}"`
+
+To obtain result : <br>
+`$mfc_getwebdata_success`
+_OR_
+Read the file 'mfc_getwebdata_success.txt' in the directory named in `$webdata_directory`
+If =1, it implies Success; if =0, it implies Failure.
 
 `mfc_removetags "80" "8" "0" "1" "1" "5" "1" "1" "1" "0" "" "${sampletext[@]}"` <br>
 `echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
