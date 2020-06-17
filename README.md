@@ -52,24 +52,19 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 `mfc_getwebdata "$url" "1" "0" "1" "1" "0" "0" "$sorted_contents_directory" \ `<br>
 `"$sorted_contents_filename" "${startClues[@]}" "${endClues[@]}"`
 
-To obtain result : <br>
-`$mfc_getwebdata_success` <br>
+To obtain result : `$mfc_getwebdata_success` <br>
 _OR_ <br>
 Read the file `mfc_getwebdata_success.txt` in the directory named in `$webdata_directory` <br>
 _[ If '1', it implies Success; if '0', it implies Failure. ]_<br><br>
 
 `mfc_removetags "$sorted_contents_directory" "$sorted_contents_filename" "0" "0" ` <br>
 
-To obtain result : <br>
-`$mfc_removetags_success` <br>
+To obtain result : `$mfc_removetags_success` <br>
 _OR_ <br>
 Read the file `mfc_removetags_success.txt` in the directory named in `$webdata_directory` <br>
 _[ If '1', it implies Success; if '0', it implies Failure. ]_<br><br>
 
-To know how old the file is : <br>
-`$mfc_time` <br>
-`$mfc_time_code` <br>
-`$mfc_time_text` <br>
+To know how old the file is : `$mfc_time`, `$mfc_time_code` and `$mfc_time_text` <br>
 _OR_ <br>
 Read the file `mfc_time.txt`, `mfc_time_code.txt` and `mfc_time_text.txt` in the directory <br>
 named in `$webdata_directory` <br><br>
