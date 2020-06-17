@@ -102,7 +102,7 @@ mfc_timedifftext()
 		let "tmpStr= tmpStr / 86400"
 		returnStr="$tmpStr""${suffix4[$mode]}"
 	else
-		let "tmpStr= tmpStr / 604800"
+		let "tmpStr= tmpStr / 2592000"
 		returnStr="$tmpStr""${suffix5[$mode]}"
 	fi
 }
