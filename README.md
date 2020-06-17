@@ -26,15 +26,15 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 _NOTE :_
 - _The main source file is located in the 'src' directory._
 - _The argument denotes that downloaded data will be stored in the 'data' directory._
-- _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid)_
+- _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_
 
 
 **2.  Function Calls**
 
-`mfc_scrollheader "70" "8" "130" "0" "1" "5" "1" "" "${sampletext[@]}"` <br>
+`mfc_getwebdata "70" "8" "130" "0" "1" "5" "1" "" "${sampletext[@]}"` <br>
 `echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
 
-`mfc_rectangularheader "80" "8" "0" "1" "1" "5" "1" "1" "1" "0" "" "${sampletext[@]}"` <br>
+`mfc_removetags "80" "8" "0" "1" "1" "5" "1" "1" "1" "0" "" "${sampletext[@]}"` <br>
 `echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
 
 <ins>NOTE :</ins>
@@ -46,28 +46,25 @@ _NOTE :_
 **3.  List of Arguments**
 
 <pre>
-mfc_scrollheader        -->   Parameter 1 - Columns
-                              Parameter 2 - Scroll Sheet Color Code
-                              Parameter 3 - Scroll Bar Color Code
-                              Parameter 4 - Full Size (Length)
-                              Parameter 5 - Scroll Alignment ( 1 => Center; 2 => Left)
-                              Parameter 6 - Text Left/Right Offset
-                              Parameter 7 - Text Top/Bottom Offset
-                              Parameter 8 - Simple Mode Character
-                              Parameter N - Data as an Array
+mfc_getwebdata        -->   Parameter 1 - URL
+                            Parameter 2 - Cached Duration ( 1 => New; 2 => Old; 3 => Day-old; ?* => Specified Duration )
+                            [ h =>  Hours; d => Days; w => Weeks; m => Months ]
+                            Parameter 3 - Quiet Mode
+                            Parameter 4 - Independent Mode
+                            Parameter 5 - Overwrite Mode
+                            Parameter 6 - Repeat Read from Start Mode
+                            Parameter 7 - Read Start from Line Number
+                            Parameter 8 - Save File Directory ( Absolute Path )
+                            Parameter 9 - Save File Name
+                            Parameter N1 - Start Tags as an Array
+                            Parameter N2 - End Tags as an Array
 
-mfc_rectangularheader   -->   Parameter 1 - Columns
-                              Parameter 2 - Border Color Code
-                              Parameter 3 - Full Size (Length)
-                              Parameter 4 - Box Alignment ( 1 => Center; 2 => Left)
-                              Parameter 5 - Text Alignment ( 1 => Center; 2 => Left)
-                              Parameter 6 - Text Left/Right Offset
-                              Parameter 7 - Text Top/Bottom Offset
-                              Parameter 8 - Design Mode ( 1 => Thickness Mode; 2 => Shadow Mode )
-                              Parameter 9 - Design Mode Value
-                              Parameter 10 - Shadow Mode Color Code
-                              Parameter 11 - Simple Mode Character
-                              Parameter N - Data as an Array
+mfc_removetags        -->   Parameter 1 - Save File Directory ( Absolute Path )
+                            Parameter 2 - Save File Name
+                            Parameter 3 - Mode ( 0 => Simple; 1 => Array based )
+                            Parameter 4 - Quiet Mode
+                            Parameter N1 - Start Tags as an Array
+                            Parameter N2 - End Tags as an Array
 </pre>
 
 <br><br>
