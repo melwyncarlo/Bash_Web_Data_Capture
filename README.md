@@ -44,8 +44,8 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 - _'TAG' is meant to be replaced with actual HTML tag names._
 - _In some cases, simply text may be used instead of tags._
 - _All this depends on the required contents and their placement in the webpage soruce file_
-
 <br>
+
 **2.  Function Calls**
 
 `mfc_getwebdata "$url" "1" "0" "1" "1" "0" "0" "$sorted_contents_directory" \ `<br>
