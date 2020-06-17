@@ -69,7 +69,7 @@ mfc_removetags        -->   Parameter 1 - Save File Directory ( Absolute Path )
 </pre>
 
 <br><br>
-### The source library also contains 2 SUPPLEMENTARY functions. Given below are function calls and descriptive lists of arguments :
+### The source library also contains 2 SUPPLEMENTARY functions. <br>Given below are function calls and descriptive lists of arguments :
 
 **2.  Function Calls**
 
