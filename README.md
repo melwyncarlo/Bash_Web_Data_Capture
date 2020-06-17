@@ -85,7 +85,7 @@ m   =>  months
 </pre>
 `$mfc_time_text` contains the time in the following format : <br>
 <pre>X second(s), X minute(s), X hours(s), X day(s), or X month(s).</pre>
-Where, 'X' is a number. <br>
+Where, 'X' is a number. <br><br>
 
 <ins>NOTE :</ins>
 - _Read the resultant files and variables immediately after calling the functions._
