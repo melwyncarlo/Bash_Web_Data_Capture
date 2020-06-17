@@ -361,8 +361,8 @@ else
 
 	PROC_ID=$!
 	count=1
-	#clear
-	#clear
+	clear
+	clear
 	echo
 	echo
 	echo -en "  INFO :\n\n  Please Wait !\n\n  Preparing Data . . .     "
