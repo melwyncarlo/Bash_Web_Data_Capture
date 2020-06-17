@@ -98,10 +98,10 @@ mfc_timedifftext()
 	elif [ $tmpStr -lt 86400 ]; then
 		let "tmpStr= tmpStr / 3600"
 		returnStr="$tmpStr""${suffix3[$mode]}"
-	elif [ $tmpStr -lt 604800 ]; then
+	elif [ $tmpStr -lt 2592000 ]; then
 		let "tmpStr= tmpStr / 86400"
 		returnStr="$tmpStr""${suffix4[$mode]}"
-	else # [ $tmpStr -lt 2592000 ]; then
+	else
 		let "tmpStr= tmpStr / 604800"
 		returnStr="$tmpStr""${suffix5[$mode]}"
 	fi
