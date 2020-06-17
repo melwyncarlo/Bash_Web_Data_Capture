@@ -73,7 +73,7 @@ To know how old the file is : <br>
 _OR_ <br>
 Read the file `mfc_time.txt`, `mfc_time_code.txt` and `mfc_time_text.txt` in the directory <br>
 named in `$webdata_directory` <br><br>
-`$mfc_time` contains the time in seconds in numerical format. <br>
+`$mfc_time` contains the time in seconds in numerical format. <br><br>
 `$mfc_time_code` contains the time in the following format : <br>
 <pre>Xs, Xmin, Xh, Xd, or Xm.</pre>
 Where, 'X' is a number and : <br>
@@ -83,7 +83,7 @@ min =>  minutes
 h   =>  hours
 d   =>  days
 m   =>  months
-</pre>
+</pre> <br>
 `$mfc_time_text` contains the time in the following format : <br>
 <pre>X second(s), X minute(s), X hours(s), X day(s), or X month(s).</pre>
 Where, 'X' is a number. <br><br>
