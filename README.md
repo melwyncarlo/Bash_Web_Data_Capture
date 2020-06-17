@@ -30,12 +30,12 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 - _The argument denotes that downloaded data will be stored in the 'data' directory._
 - _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_
 
-`url="SOME_WEBSITE_ADDRESS"`
-`sorted_contents_directory="$webdata_directory"`
-`sorted_contents_filename="stuff"`
+`url="SOME_WEBSITE_ADDRESS"` <br>
+`sorted_contents_directory="$webdata_directory"` <br>
+`sorted_contents_filename="stuff"` <br><br>
 
-`startClues=("Tag1" "Tag2" "Tag3")`
-`endClues=("Tag1" "Tag2" "Tag3")`
+`startClues=("Tag1" "Tag2" "Tag3")` <br>
+`endClues=("Tag1" "Tag2" "Tag3")` <br><br>
 
 <ins>NOTE :</ins>
 - _Start Tags may be of the form ' ... Some Text ... <TAG> ... Some Text ... '._
@@ -45,7 +45,7 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 - _In some cases, simply text may be used instead of tags._
 - _All this depends on the required contents and their placement in the webpage soruce file_
 
-
+<br>
 **2.  Function Calls**
 
 `mfc_getwebdata "$url" "1" "0" "1" "1" "0" "0" "$sorted_contents_directory" \ `<br>
@@ -55,7 +55,7 @@ To obtain result : <br>
 `$mfc_getwebdata_success` <br>
 _OR_ <br>
 Read the file `mfc_getwebdata_success.txt` in the directory named in `$webdata_directory` <br>
-If =1, it implies Success; if =0, it implies Failure.
+_[ If '1', it implies Success; if '0', it implies Failure. ]_<br><br>
 
 `mfc_removetags "$sorted_contents_directory" "$sorted_contents_filename" "0" "0" ` <br>
 
@@ -63,7 +63,7 @@ To obtain result : <br>
 `$mfc_removetags_success` <br>
 _OR_ <br>
 Read the file `mfc_removetags_success.txt` in the directory named in `$webdata_directory` <br>
-If =1, it implies Success; if =0, it implies Failure.
+_[ If '1', it implies Success; if '0', it implies Failure. ]_<br><br>
 
 To know how old the file is : <br>
 `$mfc_time` <br>
@@ -71,7 +71,7 @@ To know how old the file is : <br>
 `$mfc_time_text` <br>
 _OR_ <br>
 Read the file `mfc_time.txt`, `mfc_time_code.txt` and `mfc_time_text.txt` in the directory <br>
-named in `$webdata_directory` <br>
+named in `$webdata_directory` <br><br>
 `$mfc_time` contains the time in seconds in numerical format. <br>
 `$mfc_time_code` contains the time in the following format : <br>
 <pre>Xs, Xmin, Xh, Xd, or Xm.</pre>
@@ -90,7 +90,7 @@ Where, 'X' is a number.
 <ins>NOTE :</ins>
 - _Read the resultant files and variables immediately after calling the functions._
 
-
+<br>
 **3.  List of Arguments**
 
 <pre>
@@ -124,6 +124,7 @@ mfc_removetags        -->   Parameter 1 - Save File Directory ( Absolute Path )
 - _In 'mfc_removetags', in Array based mode, Parameters N1 and N2 must not be ignored._
 - _In any case, the number of start tags must be equal to the number of end tags._
 
+<br>
 **3.  List of ERRORS**
 
 <pre>
@@ -146,7 +147,7 @@ ERROR 01
 - _Assigning too small values for design lengths or large values for border thickness will lead to a run-time error that results in loss of text_
 - _Use individual '\n' to denote a line break as shown in 'sampletext'_
 
-
+<br>
 **3.  List of Arguments**
 
 <pre>
@@ -159,7 +160,7 @@ mfc_remove      -->   Parameter 1 - Data
                       Parameter 3 - Return Data	[ REFERENCE ]
 </pre>
 
-                              
+<br><br>
 ### For any other queries :
 
 <ins>Email me on :</ins>
