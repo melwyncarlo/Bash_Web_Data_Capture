@@ -88,7 +88,8 @@ m   =>  months
 Where, 'X' is a number. <br>
 
 <ins>NOTE :</ins>
-- _Read the resultant files and variables immediately after calling the functions._ <br>
+- _Read the resultant files and variables immediately after calling the functions._
+<br>
 
 
 **3.  List of Arguments**
