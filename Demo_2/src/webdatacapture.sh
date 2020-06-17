@@ -296,13 +296,13 @@ mfc_removetags()
 				echo
 				echo "ERROR 04 :  The chosen Save Filename either contains special charcters or"
 				echo "            does not contain any alpha-numeric characters."
-				echo "            Please input alpha-numeric characters only"
+				echo "            Please input alpha-numeric characters only."
 				echo
 			else # [ ${#tmpStr2} -ne 0 ]; then
 				echo
 				echo "ERROR 04 :  The chosen Save Filename either contains special charcters or"
 				echo "            does not contain any alpha-numeric characters."
-				echo "            Please input alpha-numeric characters only"
+				echo "            Please input alpha-numeric characters only."
 				echo
 			fi
 		fi
@@ -819,13 +819,13 @@ mfc_getwebdata()
 				echo
 				echo "ERROR 04 :  The chosen Save Filename either contains special charcters or"
 				echo "            does not contain any alpha-numeric characters."
-				echo "            Please input alpha-numeric characters only"
+				echo "            Please input alpha-numeric characters only."
 				echo
 			else # [ ${#tmpStr2} -ne 0 ]; then
 				echo
 				echo "ERROR 04 :  The chosen Save Filename either contains special charcters or"
 				echo "            does not contain any alpha-numeric characters."
-				echo "            Please input alpha-numeric characters only"
+				echo "            Please input alpha-numeric characters only."
 				echo
 			fi
 		fi
