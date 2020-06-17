@@ -125,7 +125,23 @@ mfc_removetags        -->   Parameter 1 - Save File Directory ( Absolute Path )
 **4.  List of ERRORS**
 
 <pre>
-ERROR 01
+ERROR 01    =>  No start or end tags have been inputted.
+ERROR 02    =>  Number of start and end tags are unequal.
+                If there are 2 start tags, there must be 2 end tags as well.
+ERROR 03    =>  The chosen directory does not exist.
+				        Please choose an appropriate directory or ensure that the
+				        external devices are properly connected.
+ERROR 04    =>  The chosen Save Filename either contains special charcters or
+                does not contain any alpha-numeric characters.
+				        Please input alpha-numeric characters only.
+ERROR 05    =>  The web contents downloaded file is empty.
+					      Please check your internet connection or the website's server is down.
+ERROR 06    =>  The Save Filename already exists in the chosen directory.
+				        Please choose another directory or a new filename.
+ERROR 07    =>  This error has occurred because no web data have been gathered yet.
+						    This function 'mfc_removetags' is meant to supplement the predecessor
+					      function 'mfc_getwebdata'. Please achieve successful completion of
+						    that function before operating on this function.
 </pre>
 
 <br><br>
