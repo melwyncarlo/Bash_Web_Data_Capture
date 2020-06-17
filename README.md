@@ -29,7 +29,7 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 - _The main source file is located in the 'src' directory._
 - _The argument denotes that downloaded data will be stored in the 'data' directory._
 - _Don't forget to add the ending '/' in the argument. (e.g. 'data/' is valid; but 'data' is not)_
-
+<br>
 `url="SOME_WEBSITE_ADDRESS"` <br>
 `sorted_contents_directory="$webdata_directory"` <br>
 `sorted_contents_filename="stuff"` <br><br>
@@ -85,12 +85,12 @@ m   =>  months
 </pre>
 `$mfc_time_text` contains the time in the following format : <br>
 <pre>X second(s), X minute(s), X hours(s), X day(s), or X month(s).</pre>
-Where, 'X' is a number.
+Where, 'X' is a number. <br>
 
 <ins>NOTE :</ins>
 - _Read the resultant files and variables immediately after calling the functions._
-
 <br>
+
 **3.  List of Arguments**
 
 <pre>
@@ -123,9 +123,9 @@ mfc_removetags        -->   Parameter 1 - Save File Directory ( Absolute Path )
 - _In 'mfc_removetags', in Simple mode, Parameters N1 and N2 should be ignored._
 - _In 'mfc_removetags', in Array based mode, Parameters N1 and N2 must not be ignored._
 - _In any case, the number of start tags must be equal to the number of end tags._
-
 <br>
-**3.  List of ERRORS**
+
+**4.  List of ERRORS**
 
 <pre>
 ERROR 01
@@ -134,7 +134,7 @@ ERROR 01
 <br><br>
 ### The source library also contains 2 SUPPLEMENTARY functions. <br>Given below are function calls and descriptive lists of arguments :
 
-**2.  Function Calls**
+**1.  Function Calls**
 
 `mfc_only "70" "8" "130" "0" "1" "5" "1" "" "${sampletext[@]}"` <br>
 `echo -e "$mfc_headerdesignresult"` &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; <= &#8195; <ins>(Note that the double quotes are very important)</ins>
@@ -146,9 +146,9 @@ ERROR 01
 - _The '-e' is not required for Simple (Character-based) Heading Banners_
 - _Assigning too small values for design lengths or large values for border thickness will lead to a run-time error that results in loss of text_
 - _Use individual '\n' to denote a line break as shown in 'sampletext'_
-
 <br>
-**3.  List of Arguments**
+
+**2.  List of Arguments**
 
 <pre>
 mfc_only        -->   Parameter 1 - Data
