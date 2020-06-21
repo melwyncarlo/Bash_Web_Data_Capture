@@ -90,6 +90,10 @@ mfc_timedifftext()
 
 	mfc_only "$mainStr" "2" tmpStr
 	
+	if [[ "$tmpStr" == "" ]]; then
+		tmpStr=-1
+	fi
+	
 	if [ $tmpStr -lt 60 ]; then
 		returnStr="$tmpStr""${suffix1[$mode]}"
 	elif [ $tmpStr -lt 3600 ]; then
