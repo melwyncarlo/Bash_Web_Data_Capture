@@ -8,7 +8,7 @@ A Bash Script Library to Download Select Data from the World Wide Web and perfor
 <pre>
 1.  webdatacapture.sh                         =>  Main Source (Library) File
 2.  *headerdesign.sh                          =>  Supplementary Library File
-3.  dailyreading_webdatacapture_demo.shh      =>  Demo 1 File
+3.  dailyreading_webdatacapture_demo.sh	      =>  Demo 1 File
 4.  currencyconverter_webdatacapture_demo.sh  =>  Demo 2 File
 5.  webdatacapture_demo_output.txt            =>  Youtube links to the outputs of Demos 1 and 2
 
